@@ -1,7 +1,8 @@
 html, body {
   height: 100%;
   font-family: "Regular";
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  background: red; }
 
 .container {
   margin: 120px 120px;
