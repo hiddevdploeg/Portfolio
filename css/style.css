@@ -76,6 +76,9 @@ a:hover {
 a.twitter:hover {
   color: #1DA1F2;
 }
+a.ft:hover {
+  color: #5499E1;
+}
 a.oakcons {
   font-family: Regular, sans-serif;
   font-size: 16px;

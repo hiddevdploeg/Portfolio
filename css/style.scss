@@ -64,6 +64,7 @@ a {
 
   &:hover{ color: $mussel; }
   &.twitter { &:hover { color: #1DA1F2; }}
+  &.ft { &:hover { color: #5499E1; }}
   &.oakcons {
     font-family: Regular, sans-serif;
     font-size: 16px;
