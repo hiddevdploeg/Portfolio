@@ -63,11 +63,12 @@ a {
   transition: 200ms ease-in-out;
 
   &:hover{ color: $mussel; }
-  
+
   &.twitter  { &:hover { color: #1DA1F2; }}
   &.ft       { &:hover { color: #47D66D; }}
   &.dribbble { &:hover { color: #EA4C89; }}
-
+  &.telegram { &:hover { color: #0088cc; }}
+  
   &.oakcons {
     font-family: Regular, sans-serif;
     font-size: 16px;

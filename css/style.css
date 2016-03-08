@@ -82,6 +82,9 @@ a.ft:hover {
 a.dribbble:hover {
   color: #EA4C89;
 }
+a.telegram:hover {
+  color: #0088cc;
+}
 a.oakcons {
   font-family: Regular, sans-serif;
   font-size: 16px;
