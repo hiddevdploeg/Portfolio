@@ -37,6 +37,9 @@ html, body {
   width: 480px;
 }
 
+.right {
+  float: right;
+}
 h1 {
   font-family: Semibold, sans-serif;
   font-size: 36px;
