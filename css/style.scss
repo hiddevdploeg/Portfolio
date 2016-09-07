@@ -8,6 +8,7 @@ html, body {
   font-family: Regular, sans-serif;
   overflow-y: hidden;
   margin: 0;
+  cursor: url(../assets/cursor.png), auto;
 }
 
 .links {
@@ -72,6 +73,7 @@ a {
     padding: 12px 24px;
     border-radius: 3px;
     background: #000;
+    cursor: url(../assets/cursor-1.png), auto;
     color: #fff;
     font-size: 13px;
     font-weight: normal;
