@@ -46,8 +46,8 @@ hr {
 
 .gezellig {
   position: absolute;
-  left:64px;
-  top: 532px;
+  left:74px;
+  top: 522px;
   width: 204px;
   transform: rotate(-3deg);
 }
@@ -60,11 +60,36 @@ a.download {
   font-weight: 600;
   border: 1px solid currentColor;
   padding: 8px 18px;
-  border-radius: 3px;
+  border-radius: 50px;
   text-decoration: none;
+  transition: .25s;
+}
+
+a.download:hover {
+  background-color: #39A5F7;
+  color: #fff;
+  border: 1px solid #39A5F7;
+  opacity: 1;
 }
 
 a:hover {
   opacity: .6;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 500px) {
+  .gezellig {
+    left:74px;
+    top: 572px;
+  }
+
+  .gratis {
+    left:148px;
+    top: 80px;
+  }
+
+  .lang {
+    top: 440px;
+    right: 8px;
+  }
 }
