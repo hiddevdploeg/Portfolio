@@ -93,4 +93,9 @@ a:hover {
     top: 440px;
     right: 8px;
   }
+  a.download {
+    display: block;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
 }
