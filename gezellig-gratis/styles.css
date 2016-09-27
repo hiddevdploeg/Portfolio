@@ -63,6 +63,7 @@ a.download {
   border-radius: 50px;
   text-decoration: none;
   transition: .25s;
+  margin-right: 16px;
 }
 
 a.download:hover {
