@@ -53,7 +53,7 @@ hr {
 }
 
 a {
-  color: #1078DF;
+  color: #1F8AF4;
 }
 
 a.download {
@@ -67,9 +67,9 @@ a.download {
 }
 
 a.download:hover {
-  background-color: #39A5F7;
+  background-color: #1F8AF4;
   color: #fff;
-  border: 1px solid #39A5F7;
+  border: 1px solid #1F8AF4;
   opacity: 1;
 }
 
