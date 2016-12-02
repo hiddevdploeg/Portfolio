@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  background: #fff;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.dark {
+  background: #121211; }
+
+nav {
+  width: 360px;
+  height: 100%;
+  padding: 48px 40px;
+  position: fixed;
+  float: left;
+  display: block;
+  text-align: center;
+  background: #fff;
+  border-right: 1px solid rgba(18, 18, 17, 0.2);
+  z-index: 1000; }
+  nav hr {
+    height: 1px;
+    margin: 48px 0;
+    border: 0;
+    background: rgba(18, 18, 17, 0.2); }
+  nav ul {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    list-style-type: none; }
+    nav ul li {
+      margin-bottom: 36px;
+      color: rgba(18, 18, 17, 0.5); }
+      nav ul li.search {
+        margin-top: 48px;
+        margin-bottom: 0; }
+    nav ul a {
+      color: rgba(18, 18, 17, 0.5); }
+      nav ul a:hover, nav ul a.active {
+        color: #121211;
+        border-bottom: 2px solid #97C12C; }
+    nav ul.social-links li {
+      margin-top: 0;
+      display: inline;
+      margin-left: 18px;
+      margin-right: 18px; }
+
+.footnav {
+  width: 100%;
+  height: 156px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 40px 24px 40px; }
+  .footnav hr {
+    margin-bottom: 24px; }
+  .footnav a:hover {
+    border: none; }
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: 0.25s; }
+  a.cta {
+    height: 40px;
+    padding: 10px 32px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    background: #97C12C;
+    border-radius: 3px;
+    border: 1px solid #97C12C; }
+    a.cta:hover {
+      color: #97C12C;
+      background: #fff;
+      border: 1px solid #97C12C; }
+
+.maincontainer {
+  width: 100%;
+  padding-left: 360px; }
+  .maincontainer.home {
+    height: 100%; }
+  .maincontainer.gallery {
+    padding: 24px;
+    padding-left: 392px !important;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .maincontainer.about {
+    padding: 40px;
+    padding-left: 400px !important; }
+
+.photos {
+  width: 100%;
+  padding: 2px;
+  height: 100%;
+  display: block;
+  background: url("/assets/landscape-07.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.photo {
+  width: calc(50% - 16px);
+  border-radius: 3px;
+  margin: 8px;
+  height: 279px;
+  display: inline;
+  vertical-align: baseline;
+  position: relative; }
+
+.gallery-photo {
+  max-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 3px; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 17, 0.5);
+  position: absolute;
+  border-radius: 3px;
+  opacity: 0;
+  transition: 0.25s; }
+
+.photo:hover .overlay {
+  opacity: 1;
+  -webkit-backdrop-filter: blur(6px) saturate(200%); }
+
+.gallery-photo-title {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 116px; }
+
+.green-bar {
+  width: 30px;
+  height: 2px;
+  margin-top: 16px;
+  background: #97C12C;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+p {
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgba(18, 18, 17, 0.8);
+  line-height: 1.5;
+  padding: 8px 0;
+  max-width: 640px; }
+  p.intro {
+    font-style: italic; }
+  p.center {
+    margin: 0 auto; }
+  p.description {
+    font-size: 12px;
+    opacity: .5;
+    text-align: center;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0 !important;
+    margin-bottom: 32px; }
+
+.header-image {
+  width: 100%;
+  height: 370px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.header-overlay {
+  width: 100%;
+  height: 370px;
+  background-color: rgba(18, 18, 17, 0.5);
+  background: linear-gradient(-180deg, rgba(18, 18, 17, 0) 0%, #121211 98%);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.header {
+  position: relative; }
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 36px; }
+  h1.details-header {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    float: right;
+    margin-top: 112px;
+    font-size: 30px; }
+
+.content {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto; }
+  .content p {
+    max-width: 720px;
+    margin: 40px auto;
+    line-height: 1.5;
+    color: #fff; }
+  .content img {
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 3px;
+    border: 1px solid #111111;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.1); }
+    .content img.fifty {
+      width: calc(50% - 12px); }
+  .content hr {
+    background: rgba(255, 255, 255, 0.2);
+    border: 0;
+    height: 1px;
+    margin: 64px 0;
+    width: 100%;
+    position: relative; }
+
+.white-text {
+  color: #fff; }
+
+.center {
+  text-align: center; }
+
+.transparent {
+  opacity: .5; }
+
+.right {
+  float: right; }
+
+.rel {
+  position: relative;
+  top: 152px; }
+
+.header-nav {
+  width: 100%;
+  height: 56px; }
+
+.header-cta {
+  text-decoration: none;
+  transition: 0.25s;
+  height: 32px;
+  padding: 5px 16px;
+  display: inline-block;
+  color: #97C12C;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 3px;
+  border: 1px solid #97C12C;
+  float: right;
+  margin-top: 16px;
+  margin-right: 48px;
+  -webkit-backdrop-filter: blur(6px); }
+  .header-cta:hover {
+    color: #121211;
+    background: #97C12C;
+    border: 1px solid #97C12C; }
+
+.back {
+  margin-left: 48px;
+  top: 8px;
+  color: rgba(255, 255, 255, 0.8); }
+  .back svg {
+    margin-top: 24px;
+    margin-right: 12px; }
+  .back:hover svg {
+    fill: #97C12C; }
