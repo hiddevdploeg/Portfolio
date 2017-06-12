@@ -108,9 +108,10 @@ a.telegram:hover {
   color: #0088cc;
 }
 a.oakcons {
-  font-family: Semibold, sans-serif;
+  font-family: Regular, sans-serif;
   font-size: 16px;
   border-bottom: 1px solid #F21779;
+  padding-bottom: 2px;
   color: #848A8A;
 }
 a.oakcons:hover {
