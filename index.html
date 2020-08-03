@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' href='/css/style.css'>
-    <link rel='stylesheet' href='/css/fonts.css'>
+    <link rel='stylesheet' href='/css/fonts-min.css'>
     <meta property="og:title" content="Hidde van der Ploeg" />
-    <meta property="og:url" content="http://www.hiddevanderploeg.nl" />
+    <meta property="og:url" content="http://www.hiddevdploeg.com" />
     <meta property="og:description" content="Product &amp; Icon designer. Sometimes likes to play with code." />
     <title>Hidde van der Ploeg</title>
     <script>
@@ -19,18 +19,69 @@
       ga('send', 'pageview');
 
     </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
   </head>
   <body>
-    <div id="content">
+
       <div class="container">
-        <h1>Hidde van der Ploeg</h1>
-        <p class="description">Product and Icon designer</a>. Sometimes likes to play with <a class="oakcons" href="http://vektapp.com">code.</a></p>
+
+        <section class="intro">
+          <model-viewer src="assets/scan.glb" ios-src="assets/scan.usdz" background-color="#000" auto-rotate camera-controls></model-viewer>
+          <h1>Hidde van der Ploeg</h1>
+          <p class="description">Freelance product and icon designer that sometimes likes to play with code.</p>
+          <a href="mailto:info@hiddencolor.nl" target="_blank" title="Let's have a chat" class="hire">Contact Me</a>
+        </section>
         <hr />
-        <a href="http://dribbble.com/hiddevdploeg" target="_blank" title="See some of my work" class="hire">See Some of My Work</a>
-        <div class="links">
-          <a href="mailto:hiddevanderploeg@me.com" target="_blank" title="Email">Email me</a> &middot; <a href="http://twitter.com/hiddevdploeg" class="twitter" target="_blank" title="@hiddevdploeg">Tweet me</a> &middot; <a href="facetime-audio:hiddevanderploeg@me.com" class="ft">Facetime me</a> &middot; <a href="http://dribbble.com/hiddevdploeg" class="dribbble" target="_blank" title="View my work">Some of my work</a>
+
+        <section class="apps">
+        <h2>Apps</h2>
+        <p class="description small">These are apps designed and built by me.</p>
+        <div class="item app"><a href="https://vekt.app" target="_blank" title="Vekt for iOS and watchOS"><h3>Vekt</h3> &middot; a Weight tracking app for iOS and watchOS.</a></div>
+        <div class="item app"><a href="http://brushtimer.app" target="_blank" title="Brush for watchOS"><h3>Brush</h3> &middot; Toothbrush timer for watchOS.</a></div>
+        <div class="item app"><a href="http://klank.app" target="_blank" title="Klank for iOS"><h3>Klank</h3> &middot; a New way to discover and listen to music.</a></div>
+        </section>
+        <hr />
+        <section class="exp">
+        <h2>Clients & Experience</h2>
+        <p class="description small">These are some of the companies I've worked with or for since 2010.</p>
+        <div class="experience">
+        <span>Origin</span> &middot;
+        <span>GoSquared</span> &middot;
+        <span>Felyx</span> &middot;
+        <span>LevelUp Ventures</span> &middot;
+        <span>Fitchannel</span> &middot;
+        <span>OK IT</span> &middot;
+        <span>Talpa</span> &middot;
+        <span>BankGiro Loterij</span> &middot;
+        <span>hear, hear!</span> &middot;
+        <span>EarthToday</span> &middot;
+        <span>DFFRNT Lab</span> &middot;
+        <span>SEOshop + Lightspeed</span> &middot;
+        <span>Microsoft</span> &middot;
+        <span>Sunweb</span> &middot;
+        <span>Camarilla (acquired)</span> &middot;
+        <span>Ice Mobile</span> &middot;
+        <span>ABN AMRO</a> &middot;
+        <span>KLM</span> &middot;
+        <span>Brand Loyalty</span> &middot;
+        <span>Noivflora</span> &middot;
+        <span>Vodafone</span>
         </div>
+        <a href="https://dribbble.com/hiddevdploeg" target="_blank" title="Dribbble" class="hire">View my Work</a>
+
+      </section>
+        <hr />
+
       </div>
-    </div>
+      <div class="links">
+        <a href="mailto:info@hiddencolor.nl" target="_blank" title="Email">Email</a>
+        <a href="http://twitter.com/hiddevdploeg" class="twitter" target="_blank" title="@hiddevdploeg">Tweet</a>
+        <a href="facetime-audio:hiddevanderploeg@me.com" class="ft">Facetime</a>
+        <a href="http://twitter.com/hiddevdploeg" class="twitter" target="_blank" title="@hiddevdploeg">LinkedIn</a>
+        <a href="http://dribbble.com/hiddevdploeg" class="dribbble" target="_blank" title="View my work">Dribbble</a>
+      </div>
+
+
   </body>
 </html>
