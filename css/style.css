@@ -7,7 +7,7 @@ html, body {
 }
 
 .intro {
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -16,10 +16,11 @@ html, body {
 }
 
 model-viewer {
-  height: 100%;
-  width: 100%;
+  height: 50vh;
+  width: 50vw;
   border: none;
   outline: none;
+  margin: 40px 0;
 }
 
 section {
@@ -27,7 +28,7 @@ section {
 }
 
 .links {
-  position: absolute;
+  position: fixed;
   top: 16px;
   width: 100vw;
   display: flex;
@@ -48,12 +49,13 @@ section {
 h1 {
   font-family: Bold, sans-serif;
   font-size: 3rem;
+  margin: 8px 0;
 }
 
 h2 {
   font-family: Bold, sans-serif;
   font-size: 2rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h3 {
@@ -101,13 +103,20 @@ p.description.small {
 }
 
 .experience {
-  padding-bottom: 1.25rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
 }
 
 .experience span {
   font-size: 14px;
-  padding: 12px ,12px,0,12px;
-  line-height: 200%;
+  padding: 12px,12px,0,12px;
+  line-height: 220%;
+}
+
+.experience span::after {
+  content: ' // ';
+  color: #494C4C;
 }
 
 .experience span:first-child {
@@ -135,6 +144,7 @@ a.hire {
   font-size: 1rem;
   letter-spacing: .5px;
   box-shadow: 0px 6px 12px 0px rgba(53, 184, 87, 0.2);
+  font-family: Bold, sans-serif;
 }
 
 a.hire:hover {
@@ -152,4 +162,28 @@ a.ft:hover {
 
 a.dribbble:hover {
   color: #EA4C89;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .intro {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .intro p {
+    font-size: 1rem;
+    padding-bottom: 4px;
+  }
+  .item {
+    line-height: 100%;
+    margin: 1rem 0;
+  }
+  .item h3 {
+    font-size: 1.2rem;
+  }
+  model-viewer {
+    width: 100vw;
+  }
 }

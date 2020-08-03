@@ -129,6 +129,17 @@
 		"oAP": "/assets/fonts/Norse-Thin.woff2",
 		"oF": 0
 		},
+	"/assets/og-image.jpg": {
+		"ft": 16384,
+		"iS": 196870,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/assets/og-image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/assets/scan.glb": {
 		"cB": 0,
 		"ft": 8192,

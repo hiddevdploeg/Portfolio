@@ -11,21 +11,20 @@ html, body {
 }
 
 .intro {
-
-  height: 80vh;
+  height: 85vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   background: #000;
-
 }
 
 model-viewer {
-  height: 100%;
-  width: 100%;
+  height: 50vh;
+  width: 50vw;
   border: none;
   outline: none;
+  margin: 40px 0 ;
 }
 
 section {
@@ -33,7 +32,7 @@ section {
 }
 
 .links {
-  position: absolute;
+  position: fixed;
   top: 16px;
   width: 100vw;
   display: flex;
@@ -54,12 +53,13 @@ section {
 h1 {
   font-family: Bold, sans-serif;
   font-size: 3rem;
+  margin: 8px 0 ;
 }
 
 h2 {
   font-family: Bold, sans-serif;
   font-size: 2rem;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 h3 {
@@ -102,25 +102,24 @@ p {
     font-size: 1.5rem;
     line-height: 150%;
     margin-top: 6px;
-
-    &.small {
-      font-size: 14px;
-    }
+    &.small { font-size: 14px; }
   }
 
 }
 
 .experience {
-  padding-bottom: 1.25rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
   span {
     font-size: 14px;
-    padding: 12px ,12px,0,12px ;
-    line-height: 200%;
-
-    &:first-child {
-      padding-left: 0;
+    padding: 12px,12px,0,12px ;
+    line-height: 220%;
+    &::after {
+      content: ' // ';
+      color: $moses;
     }
-
+    &:first-child { padding-left: 0; }
   }
 }
 
@@ -142,7 +141,7 @@ a {
     font-size: 1rem;
     letter-spacing: .5px;
     box-shadow: 0px 6px 12px 0px rgba(53,184,87,0.20);
-
+    font-family: Bold, sans-serif;
     &:hover {
       box-shadow: none;
       background: #19CA47;
@@ -152,4 +151,30 @@ a {
   &.twitter  { &:hover { color: #1DA1F2; }}
   &.ft       { &:hover { color: #47D66D; }}
   &.dribbble { &:hover { color: #EA4C89; }}
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 2rem;
+  }
+.intro {
+  p {
+    font-size: 1rem;
+    padding-bottom: 4px;
+  }
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.item {
+  line-height: 100%;
+
+  margin: 1rem 0;
+
+  h3 {font-size: 1.2rem;}
+}
+
+  model-viewer {
+    width: 100vw;
+  }
 }
