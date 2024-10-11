@@ -111,6 +111,10 @@ p.description.small {
   display: block;
 }
 
+.event a {
+  color: #19CA47;
+}
+
 .strike {
   text-decoration: line-through;
 }
