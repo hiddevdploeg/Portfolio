@@ -34,11 +34,24 @@ section {
   width: 100vw;
   display: flex;
   justify-content: center;
+  z-index: 1000;
+}
+
+.links nav {
+  display: flex;
+  gap: 16px;
 }
 
 .links a {
   padding-right: 8px;
   padding-left: 8px;
+  color: #848A8A;
+  text-decoration: none;
+  transition: 200ms ease-in-out;
+}
+
+.links a:hover {
+  color: #fff;
 }
 
 .container {
