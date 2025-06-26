@@ -208,3 +208,37 @@ a.linkedin:hover {
     width: 100vw;
   }
 }
+
+.show-all-events {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #494C4C;
+  border-radius: 6px;
+  background: transparent;
+  color: #848A8A;
+  font-size: 14px;
+  font-family: Demibold, sans-serif;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  margin: 20px 0;
+}
+
+.show-all-events:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+.all-events {
+  margin-top: 20px;
+}
+
+.all-events h4 {
+  font-family: Bold, sans-serif;
+  font-size: 1.2rem;
+  margin: 20px 0 10px 0;
+  color: #fff;
+}
+
+.recent-events .event {
+  margin-bottom: 20px;
+}

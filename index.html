@@ -99,7 +99,7 @@
         </div>
       </section>
       <section class="apps">
-        <h2>NowPlaying</h2>
+        <h2>NowPlaying: Music Discovery</h2>
         <p class="description small">
           Explore the hidden stories behind your favorite music & enhance your listening experience.
         </p>
@@ -130,82 +130,100 @@
         <p class="description small ">
           I love sharing knowledge and ideas and hope to inspire anyone to push boundaries. You can catch me talking at the following events.
         </p>
-       <div class="event">
-          <b>2025</b>
-         <div class="event">
-            <b>Less AI, more magic!</b>
-            <p class="description small">Arctic Conference - Oulu(Finland), 11 March 2025</p>
+        
+        <!-- Recent Events (Always Visible) -->
+        <div class="recent-events">
+          <div class="event">
+            <div class="event">
+              <b>SwiftLeeds Evening Talkshow (Host)</b>
+              <p class="description small">SwiftLeeds - Leeds (UK), 07 October 2025</p>
+            </div>
           </div>
-         <div class="event">
-            <b>TBA</b>
-            <p class="description small">TBA</p>
+          
+          <div class="event">
+            <b>2025</b>
+            <div class="event">
+              <b>The Roast of your App's design</b>
+              <p class="description small">Deep Dish Swift - Chicago (US), 12 April 2025</p>
+            </div>
+            <div class="event">
+              <b>Less AI, more magic!</b>
+              <p class="description small">Arctic Conference - Oulu(Finland), 11 March 2025</p>
+            </div>
           </div>
-         
-        </div>
-        
-        <h4 id="recent">Past Events</h4>
-        
-        <div class="event">
-          <b>2024</b>
-         <a href="https://www.youtube.com/watch?v=n9W5cB6xCXI" class="event">
-            <b>The Roast of your App's design</b>
-            <p class="description small">SwiftLeeds - Leeds (UK), 09 Oct 2024</p>
-          </a>
-         <div class="event">
-            <b>Less AI, More Magic</b>
-            <p class="description small">NSSpain - Logroño (Spain), 19 Sep 2024</p>
-          </div>
-          <a href="https://www.youtube.com/watch?v=Uov7ODSlHqY" class="event">
-            <b>Improve your app with quick wins</b>
-            <p class="description small">SwiftCraft - Folkestone (UK), 24 May 2024</p>
-          </a>
-        
-        <a href="https://www.youtube.com/watch?v=q6EW11yke2U" class="event">
-            <b>Improve your app with quick wins</b>
-            <p class="description small">iOSKonf - Skopje (Macedonia), 14 May 2024</p>
-          </a>
-        
-          <a href="https://www.youtube.com/watch?v=3Y1Co_qwBuQ" class="event">
-            <b>Designing Spatial Apps</b>
-            <p class="description small">Let's visionOS - Beijing (China), 30 March 2024</p>
-          </a>
         </div>
 
-        <div class="event">
-           <b>Older</b>
-         <div class="event">
-          <b>Design Labs</b>
-          <p class="description small">SwiftLeeds - Leeds, 9 & 10 October 2023</p>
+        <!-- Show All Events Button -->
+        <button class="show-all-events" onclick="toggleAllEvents()">
+          Show all events (15)
+        </button>
+
+        <!-- All Events (Hidden by Default) -->
+        <div class="all-events" id="allEvents" style="display: none;">
+          <h4>Past Events</h4>
+          
+          <div class="event">
+            <b>2024</b>
+            <a href="https://www.youtube.com/watch?v=n9W5cB6xCXI" class="event">
+              <b>The Roast of your App's design</b>
+              <p class="description small">SwiftLeeds - Leeds (UK), 09 Oct 2024</p>
+            </a>
+            <div class="event">
+              <b>Less AI, More Magic</b>
+              <p class="description small">NSSpain - Logroño (Spain), 19 Sep 2024</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=Uov7ODSlHqY" class="event">
+              <b>Improve your app with quick wins</b>
+              <p class="description small">SwiftCraft - Folkestone (UK), 24 May 2024</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=q6EW11yke2U" class="event">
+              <b>Improve your app with quick wins</b>
+              <p class="description small">iOSKonf - Skopje (Macedonia), 14 May 2024</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=3Y1Co_qwBuQ" class="event">
+              <b>Designing Spatial Apps</b>
+              <p class="description small">Let's visionOS - Beijing (China), 30 March 2024</p>
+            </a>
+          </div>
+
+          <div class="event">
+            <b>2023</b>
+            <div class="event">
+              <b>Design Labs</b>
+              <p class="description small">SwiftLeeds - Leeds, 9 & 10 October 2023</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=tlk9BRvIbq4&t=1s" class="event">
+              <b>Make your app look like you've hired a designer</b>
+              <p class="description small">Swift Connection 2023 - Paris (France), 21 & 22 September 2023</p>
+            </a>
+            <div class="event">
+              <b>It's time to build for watchOS (Workshop)</b>
+              <p class="description small">iOSDEV UK 2023 - Aberystwyth (UK), 4 September 2023</p>
+            </div>
+            <div class="event">
+              <b>The perks of being on your wrist</b>
+              <p class="description small">AppDevCon 2023 - Amsterdam (Netherlands), 12 May 2023</p>
+            </div>
+            <a href="https://www.youtube.com/watch?v=b4XjNwTC_HM" class="event">
+              <b>Make your app look like you've hired a designer</b>
+              <p class="description small">Swift Heroes 2023 - Turin (Italy), 04 May 2023</p>
+            </a>
+            <div class="event">
+              <b>The Designer Meetup Rotterdam</b>
+              <p class="description small">Rotterdam (Netherlands), 13 April 2023</p>
+            </div>
+          </div>
+
+          <div class="event">
+            <b>2022</b>
+            <a href="https://www.youtube.com/watch?v=L5HKInoo8r0" class="event">
+              <b>Do iOS 2022</b>
+              <p class="description small">
+                Amsterdam (Netherlands), 09 November 2022
+              </p>
+            </a>
+          </div>
         </div>
-        <a href="https://www.youtube.com/watch?v=tlk9BRvIbq4&t=1s" class="event">
-          <b>Make your app look like you've hired a designer</b>
-          <p class="description small">Swift Connection 2023 - Paris (France), 21 & 22 September 2023</p>
-        </a>
-        <div class="event">
-          <b>It's time to build for watchOS (Workshop)</b>
-          <p class="description small">iOSDEV UK 2023 - Aberystwyth (UK), 4 September 2023</p>
-        </div>
-        <div class="event">
-          <b>The perks of being on your wrist</b>
-          <p class="description small">AppDevCon 2023 - Amsterdam (Netherlands), 12 May 2023</p>
-        </div>
-        <a href="https://www.youtube.com/watch?v=b4XjNwTC_HM" class="event">
-          <b>Make your app look like you've hired a designer</b>
-          <p class="description small">Swift Heroes 2023 - Turin (Italy), 04 May 2023</p>
-        </a>
-        <div class="event">
-          <b>The Designer Meetup Rotterdam</b>
-          <p class="description small">Rotterdam (Netherlands), 13 April 2023</p>
-        </div>
-        
-        <a href="https://www.youtube.com/watch?v=L5HKInoo8r0" class="event">
-          <b>Do iOS 2022</b>
-          <p class="description small">
-            Amsterdam (Netherlands), 09 November 2022
-          </p>
-        </a>
-        </div>
-        
       </section>
       <hr />
       <section class="exp">
@@ -294,5 +312,19 @@
       >
       
     </div>
+    <script>
+      function toggleAllEvents() {
+        const allEvents = document.getElementById('allEvents');
+        const button = document.querySelector('.show-all-events');
+        
+        if (allEvents.style.display === 'none') {
+          allEvents.style.display = 'block';
+          button.textContent = 'Hide all events';
+        } else {
+          allEvents.style.display = 'none';
+          button.textContent = 'Show all events (15)';
+        }
+      }
+    </script>
   </body>
 </html>
